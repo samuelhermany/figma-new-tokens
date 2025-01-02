@@ -71,8 +71,8 @@ jobs:
       # Commit e push dos arquivos gerados
       - name: Commit generated files to GitHub
         run: |
-          git add build/css/variables.css build/js/variables.js
-          git commit -m "build: Generated CSS and JS tokens"
+          git add build/css/variables.css
+          git commit -m "build: Generated CSS tokens"
           git push origin ${{ env.TARGET_BRANCH }}
 
       # Garantindo que as referências do repositório estejam atualizadas
